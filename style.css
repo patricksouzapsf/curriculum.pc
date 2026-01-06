@@ -2,97 +2,116 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-:root{
-
-    --fonte-padrao:'Bebas Neue', cursive;
-}
-*{
-    margin: 0px;
-    padding: 0px;
+:root {
+    --fonte-padrao: 'Bebas Neue', cursive;
 }
 
-body{
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-image: url(imagens/imagem2.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* HEADER */
+header {
+    font-size: 1.2em;
 }
-header{
-   font-size: 1.2em;
+
+/* MAIN */
+main {
+    background-color: white;
+    min-width: 320px;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
 }
-section#dados{
-    margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgba(11, 38, 172, 0.1),transparent);
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: -20px;
-    padding-left: 30px;
-    line-height: 1.5em;
-}
-img{
-    display:inline-flex;
-    max-width: 20px;
-    margin-bottom: -7px;
-    
-    
-}
-h1{
+
+/* TÍTULOS */
+h1 {
     font-family: var(--fonte-padrao);
     font-weight: 500;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
     margin-left: 20px;
     padding: 10px;
-    
 }
-h2{
-    background-image: linear-gradient(to right, rgba(11, 38, 172, 0.1),transparent);
-    font-family:var(--fonte-padrao);
+
+h2 {
+    background-image: linear-gradient(to right, rgba(11, 38, 172, 0.1), transparent);
+    font-family: var(--fonte-padrao);
     font-weight: normal;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
     border-radius: 5px;
-    margin-left: -20px;
-    padding-left: 30px;
-    
-    
+    margin: 20px 0 10px -20px;
+    padding: 8px 0 8px 30px;
 }
-main{
-    background-color: white;
-    min-width: 320px;
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 15px;
-    padding-bottom: 20px;
+
+/* SEÇÃO DADOS */
+section#dados {
     margin-bottom: 20px;
-    
+    background-image: linear-gradient(to right, rgba(11, 38, 172, 0.1), transparent);
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    line-height: 1.6em;
 }
-main p{
+
+/* TEXTO */
+main p {
     text-align: justify;
-    text-indent: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
     max-width: 600px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-      
 }
-p.h1{
-    line-height: 1.8;
-    padding: 10px;
+
+/* LISTAS – PARTE MAIS IMPORTANTE */
+ul {
+    list-style-position: outside;
+    padding-left: 40px;
+    margin-top: 10px;
 }
-ul{
-    padding: 10px 0px ;
+
+ul li {
+    margin-bottom: 20px; /* espaço entre experiências */
 }
-ul>li{
-    
-    margin-left: 45px;
-    line-height: 2em;
+
+/* TÍTULO DA EXPERIÊNCIA */
+ul li strong {
+    display: block;
+    margin-bottom: 6px;
 }
-footer{
-    background-color:black;
+
+/* DESCRIÇÃO DA EXPERIÊNCIA */
+ul li p {
+    margin: 0;
+    text-indent: 0;
+    line-height: 1.5;
+}
+
+/* IMAGENS */
+img {
+    display: inline-flex;
+    max-width: 20px;
+    margin-bottom: -6px;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
     max-width: 740px;
     margin: auto;
     text-align: center;
     color: white;
-
+    padding: 10px;
 }
-footer a{
+
+footer a {
     color: white;
     font-weight: normal;
+    text-decoration: none;
 }
