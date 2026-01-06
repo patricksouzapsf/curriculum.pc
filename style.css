@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --fonte-padrao: 'Bebas Neue', cursive;
+    --fonte-titulo: 'Bebas Neue', cursive;
 }
 
 /* RESET */
@@ -15,103 +15,116 @@
 
 body {
     background-image: url(imagens/imagem2.jpg);
-    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* HEADER */
-header {
-    font-size: 1.2em;
-}
-
-/* MAIN */
+/* CONTEÚDO PRINCIPAL */
 main {
-    background-color: white;
-    min-width: 320px;
+    background-color: #ffffff;
     max-width: 700px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 15px;
 }
 
-/* TÍTULOS */
-h1 {
-    font-family: var(--fonte-padrao);
-    font-weight: 500;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
-    margin-left: 20px;
-    padding: 10px;
-}
-
-h2 {
+/* TOPO */
+.topo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
     background-image: linear-gradient(to right, rgba(11, 38, 172, 0.1), transparent);
-    font-family: var(--fonte-padrao);
-    font-weight: normal;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
-    border-radius: 5px;
-    margin: 20px 0 10px -20px;
-    padding: 8px 0 8px 30px;
-}
-
-/* SEÇÃO DADOS */
-section#dados {
+    padding: 20px;
+    border-radius: 12px;
     margin-bottom: 20px;
+}
+
+/* FOTO */
+.foto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* INFO */
+.info h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+}
+
+.info p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 0;
+}
+
+/* TÍTULOS */
+h2 {
+    font-family: var(--fonte-titulo);
+    margin-top: 20px;
+    padding-left: 10px;
     background-image: linear-gradient(to right, rgba(11, 38, 172, 0.1), transparent);
-    padding: 10px 10px 10px 30px;
-    border-radius: 10px;
-    line-height: 1.6em;
+    border-radius: 5px;
 }
 
-/* TEXTO */
-main p {
-    text-align: justify;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    max-width: 600px;
-}
-
-/* LISTAS – PARTE MAIS IMPORTANTE */
-ul {
-    list-style-position: outside;
-    padding-left: 40px;
+/* TEXTOS */
+.texto {
     margin-top: 10px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LISTAS */
+ul {
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 ul li {
-    margin-bottom: 20px; /* espaço entre experiências */
+    line-height: 1.8em;
 }
 
-/* TÍTULO DA EXPERIÊNCIA */
-ul li strong {
-    display: block;
-    margin-bottom: 6px;
+/* EXPERIÊNCIA */
+.experiencia li {
+    margin-bottom: 15px;
 }
 
-/* DESCRIÇÃO DA EXPERIÊNCIA */
-ul li p {
-    margin: 0;
-    text-indent: 0;
-    line-height: 1.5;
-}
-
-/* IMAGENS */
-img {
-    display: inline-flex;
-    max-width: 20px;
-    margin-bottom: -6px;
+.experiencia p {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* FOOTER */
 footer {
     background-color: black;
-    max-width: 740px;
+    max-width: 700px;
     margin: auto;
     text-align: center;
-    color: white;
     padding: 10px;
+    color: white;
+    border-radius: 0 0 15px 15px;
 }
 
 footer a {
     color: white;
-    font-weight: normal;
     text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto img {
+        width: 100px;
+        height: 100px;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
 }
