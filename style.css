@@ -58,6 +58,11 @@ main {
     font-family: var(--fonte-titulo);
     font-size: 2em;
 }
+.div h1 {
+        font-family: var(--fonte-titulo);
+    font-size: 2em;
+}
+
 
 .info p {
     font-family: Arial, Helvetica, sans-serif;
