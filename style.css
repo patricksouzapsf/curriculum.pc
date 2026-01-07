@@ -56,7 +56,7 @@ main {
 /* INFO */
 .info h1 {
     font-family: var(--fonte-titulo);
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .info p {
