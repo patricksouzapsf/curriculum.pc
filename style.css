@@ -67,19 +67,10 @@ img {
 /* TÍTULOS */
 h2 {
     font-family: var(--fonte-titulo);
-    font-weight: normal;
-    font-size: 1.4em;
-
-    background-color: #eef1ff;
-    color: #000;
-
-    padding: 6px 12px;
-    margin: 20px 0 10px 0;
-
-    border-radius: 6px;
-
-    width: fit-content;
-    max-width: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+    background-image: linear-gradient(to right, rgba(11, 38, 172, 0.1), transparent);
+    border-radius: 5px;
 }
 
 
