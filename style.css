@@ -82,6 +82,7 @@ h2 {
 /* TEXTOS */
 .texto {
     margin-top: 10px;
+    padding-left: 10px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
