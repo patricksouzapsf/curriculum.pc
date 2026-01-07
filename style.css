@@ -40,7 +40,7 @@ main {
 }
 
 /* FOTO */
-.foto img {
+.foto img.f {
     width: 120px;
     height: 120px;
     object-fit: cover;
