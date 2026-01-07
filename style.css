@@ -40,14 +40,14 @@ main {
 }
 
 /* FOTO */
-.foto img.f {
+.foto img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
-img {
+.info img {
     display: inline-flex;
     max-width: 20px;
     margin-bottom: -6px;
